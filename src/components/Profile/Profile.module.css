@@ -1,8 +1,71 @@
-.title {
-  color: tomato;
-}
+/* START styles for Profile */
 
-.title-container {
-  border: 2px solid teal;
+.profile {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 2px solid black;
   border-radius: 8px;
 }
+
+.description {
+  padding: 15px 0 15px 0;
+}
+
+.avatar {
+  background-color: grey;
+  border: none;
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.name {
+  font-weight: 700;
+  color: black;
+  font-size: 40px;
+  margin: 0;
+}
+
+.tag {
+  font-size: 30px;
+  margin: 0;
+  color: grey;
+}
+
+.location {
+  font-size: 30px;
+  margin: 0;
+  color: grey;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  background-color: lightgray;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 165px;
+  padding: 20px 47px;
+  justify-content: space-between;
+  font-weight: 400;
+  color: black;
+  border: 1px solid darkgray;
+}
+
+.label {
+  font-size: 20px;
+}
+
+.quantity {
+  font-size: 30px;
+  color: black;
+}
+
+/* END styles for Profile  */

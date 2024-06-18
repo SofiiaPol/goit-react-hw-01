@@ -1,0 +1,46 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  /* width: 100%; */
+  border-collapse: collapse;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.table,
+.tritem,
+.tditem {
+  border: 1px solid;
+}
+
+.trlist {
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  align-items: center;
+  background-color: darkred;
+}
+
+.tritem {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  color: white;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+.trslist {
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.tditem {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+  color: black;
+}

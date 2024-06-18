@@ -1,0 +1,29 @@
+.green {
+  color: green;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.red {
+  color: red;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.fricontainer {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.friimg {
+  width: 80px;
+}
+
+.friname {
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0;
+}

@@ -1,43 +1,20 @@
 import styles from './FriendList.module.css';
+import FriendListItem from '../FriendListItem/FriendListItem';
 
 function FriendList({ friends }) {
   return (
-    <ul>
-      <li>
-        <div>
-          <img src={avatar} alt="Avatar" width="48" />
-          <p>{`${name}`}</p>
-          <p>{`${isOnline}`}</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <img src="" alt="Avatar" width="48" />
-          <p>Friend name</p>
-          <p>Friend status</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <img src="" alt="Avatar" width="48" />
-          <p>Friend name</p>
-          <p>Friend status</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <img src="" alt="Avatar" width="48" />
-          <p>Friend name</p>
-          <p>Friend status</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <img src="" alt="Avatar" width="48" />
-          <p>Friend name</p>
-          <p>Friend status</p>
-        </div>
-      </li>
+    <ul className={styles.frilist}>
+      {friends.map(friend => {
+        return (
+          <li key={friend.id}>
+            <FriendListItem
+              avatar={friend.avatar}
+              name={friend.name}
+              isOnline={friend.isOnline}
+            />
+          </li>
+        );
+      })}
     </ul>
   );
 }
